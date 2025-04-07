@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <meta name="description" content="Ashiwan Kanojia — MERN Stack Developer & DevOps Enthusiast Portfolio. Showcasing projects, skills, and experience.">
+
+    <style>
+        
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">Ashiwan</div>
+        <ul class="nav-links">
+            <li><a href="index.html">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button class="download-btn" onclick="location.href='resume.pdf';">Download CV</button>
+        <div class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Hi, I'm <span class="name">Ashiwan</span></h1>
+            <h2>Web Developer & <br> DevOps Enthusiast</h2>
+            <p>Passionate MERN stack developer with expertise in building efficient and scalable web applications. 
+               Currently pursuing B.Tech and actively contributing to open-source projects.</p>
+            <div class="buttons">
+                <button class="btn black"><a href="#contact">Get in Touch</a></button>
+                <button class="btn blue"><a href="#projects">View Projects</a></button>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="me.jpg" alt="Developer at work">
+        </div>
+    </section>
+
+    <section class="skills" id="skills">
+        <h2 class="section-title" data-aos="fade-up">Technical Expertise</h2>
+        <div class="skills-container">
+            <div class="skill-card" data-aos="fade-up" data-aos-delay="100">
+                <i class="fas fa-code"></i>
+                <h3>Frontend Development</h3>
+                <p>React.js, HTML, CSS, JavaScript, Tailwind CSS</p>
+            </div>
+            <div class="skill-card" data-aos="fade-up" data-aos-delay="200">
+                <i class="fas fa-server"></i>
+                <h3>Backend Development</h3>
+                <p>Node.js, Express.js, RESTful APIs</p>
+            </div>
+            <div class="skill-card" data-aos="fade-up" data-aos-delay="300">
+                <i class="fas fa-database"></i>
+                <h3>Database</h3>
+                <p>MongoDB, Database Design</p>
+            </div>
+            <div class="skill-card" data-aos="fade-up" data-aos-delay="100">
+                <i class="fas fa-cogs"></i>
+                <h3>DevOps</h3>
+                <p>Docker, CI/CD, GitHub Actions</p>
+            </div>
+            <div class="skill-card" data-aos="fade-up" data-aos-delay="200">
+                <i class="fas fa-laptop-code"></i>
+                <h3>Programming</h3>
+                <p>C, C++, JavaScript</p>
+            </div>
+            <div class="skill-card" data-aos="fade-up" data-aos-delay="300">
+                <i class="fas fa-code-branch"></i>
+                <h3>Version Control</h3>
+                <p>Git, GitHub</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects" id="projects">
+        <h2 class="section-title" data-aos="fade-up">Featured Work</h2>
+        <div class="projects-container">
+            
+            <!-- Project 1 -->
+            <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                <img src="collab2.png" alt="TeamSync Project">
+                <div class="project-info">
+                    <h3>TeamSync</h3>
+                    <p>A real-time team collaboration tool with task management, live chat, and file sharing capabilities.</p>
+                    <div class="tech-stack">
+                        <span>React.js</span>
+                        <span>Node.js</span>
+                        <span>MongoDB</span>
+                    </div>
+                    <div class="project-buttons">
+                        <a href="#" class="project-btn view-code"><i class="fas fa-code"></i> View Code</a>
+                        <a href="#" class="project-btn live-demo"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                <img src="todo 2.jpeg" alt="Task Tracker">
+                <div class="project-info">
+                    <h3>Task Tracker</h3>
+                    <p>A to-do application with task management and deadline reminder features.</p>
+                    <div class="tech-stack">
+                        <span>React.js</span>
+                        <span>Node.js</span>
+                        <span>MongoDB</span>
+                    </div>
+                    <div class="project-buttons">
+                        <a href="#" class="project-btn view-code"><i class="fas fa-code"></i> View Code</a>
+                        <a href="#" class="project-btn live-demo"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+                <img src="dev2.jpeg" alt="Portfolio Website">
+                <div class="project-info">
+                    <h3>Portfolio Website</h3>
+                    <p>A responsive personal portfolio showcasing my skills and projects.</p>
+                    <div class="tech-stack">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="project-buttons">
+                        <a href="#" class="project-btn view-code"><i class="fas fa-code"></i> View Code</a>
+                        <a href="#" class="project-btn live-demo"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="experience" id="experience">
+        <h2 class="section-title" data-aos="fade-up">Professional Journey</h2>
+        <div class="experience-container" data-aos="fade-up" data-aos-delay="100">
+            
+            <!-- Experience Card -->
+            <div class="experience-card">
+                <div class="icon">
+                    <i class="fas fa-briefcase"></i>
+                </div>
+                <div class="experience-info">
+                    <h3>Web Development Intern</h3>
+                    <span class="company">Shadow Fox</span>
+                    <span class="date">June 2023 - Present</span>
+                    <ul>
+                        <li>Developing responsive web applications using MERN stack</li>
+                        <li>Collaborating with the team to enhance UI/UX</li>
+                        <li>Implementing API integrations and database management</li>
+                        <li>Participating in code reviews and team discussions</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section class="achievements">
+        <h2 class="section-title" data-aos="fade-up">Milestones & Recognition</h2>
+        <div class="achievement-container">
+            <div class="achievement-card" data-aos="fade-up" data-aos-delay="100">
+                <i class="fas fa-code"></i>
+                <h3>100 Days of Code</h3>
+                <p>84+ days completed of consistent coding practice and project building</p>
+            </div>
+            <div class="achievement-card" data-aos="fade-up" data-aos-delay="200">
+                <i class="fab fa-github"></i>
+                <h3>GitHub Contributions</h3>
+                <p>500+ contributions this year across various projects and repositories</p>
+            </div>
+            <div class="achievement-card" data-aos="fade-up" data-aos-delay="300">
+                <i class="fas fa-certificate"></i>
+                <h3>Certifications</h3>
+                <p>Completed certifications in Web Development and DevOps fundamentals</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Get in Touch Section -->
+    <section class="contact-section" id="contact">
+        <h2 class="section-title" data-aos="fade-up">Get in Touch</h2>
+        <p class="subtitle" data-aos="fade-up" data-aos-delay="100">Let's discuss how we can work together on your next project or opportunity</p>
+
+        <div class="contact-buttons">
+            <a href="https://github.com/its-Ashiwan" class="contact-btn" data-aos="fade-up" data-aos-delay="200" target="_blank">
+                <i class="fab fa-github"></i> GitHub Profile
+            </a>
+            <a href="https://www.linkedin.com/in/ashiwan-kanojia/" class="contact-btn" data-aos="fade-up" data-aos-delay="300" target="_blank">
+                <i class="fab fa-linkedin"></i> LinkedIn Profile
+            </a>
+            <a href="mailto:ashiwan@example.com" class="contact-btn" data-aos="fade-up" data-aos-delay="400">
+                <i class="fas fa-envelope"></i> Email Me
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Ashiwan Kanojia. All rights reserved.</p>
+    </footer>
+
+    <!-- AOS JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 800,
+            once: true,
+            easing: 'ease-in-out'
+        });
+
+        // Mobile menu toggle
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            const hamburger = document.querySelector('.hamburger');
+            
+            navLinks.classList.toggle('active');
+            hamburger.classList.toggle('active');
+            
+            // Toggle body scroll when menu is open
+            document.body.style.overflow = navLinks.classList.contains('active') ? 'hidden' : 'auto';
+        }
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                if (window.innerWidth <= 992) {
+                    toggleMenu();
+                }
+            });
+        });
+
+        // Smooth scrolling for all links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 60,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Add shadow to navbar on scroll
+        window.addEventListener('scroll', () => {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 10) {
+                navbar.style.boxShadow = '0 4px 15px rgba(0, 0, 0, 0.1)';
+            } else {
+                navbar.style.boxShadow = '0 4px 8px rgba(0, 0, 0, 0.1)';
+            }
+        });
+    </script>
+</body>
+</html>
